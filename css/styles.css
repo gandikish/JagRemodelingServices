@@ -6,6 +6,11 @@
   list-style: none;
 }
 
+body {
+  height: 100%;
+  position: relative;
+}
+
 header {
   background-color: #EDDB7C;
   height: 4rem;
@@ -413,6 +418,8 @@ footer {
     padding-bottom: 100%;
     margin: 0;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6);
+    height: 100%;
+    z-index: 3;
   }
   .nav.visible {
     opacity: 1;
