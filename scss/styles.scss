@@ -1,0 +1,505 @@
+$color-yellow:#EDDB7C;
+
+@mixin font-for-titles{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    padding: 4rem;
+    
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    background-color: $color-yellow;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    top: 0%;
+}
+
+.navbar__logo{
+    cursor: pointer;
+    max-width: 4rem;
+    margin-left: 1rem;
+}
+
+.nav__list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+    li{
+        a{
+        color: #000;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.2rem;
+            &:hover{
+                text-decoration: underline 1px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+    margin-right: 1rem;
+}
+
+.main__containerTop{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    background-image: url(../images/backgroundimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 4rem;
+            text-align: center;
+            color: #fff;
+            padding: 2rem;
+         }
+    button{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1.5rem;
+            background-color: $color-yellow;
+            border: none;
+            border-radius: 30px;
+            width: 14.5rem;
+            height: 4rem;
+            margin: 2rem;
+            &:hover{
+                cursor: pointer;
+                transition: 0.6s;
+                background-color: black;
+                color: #fff;
+            }
+        }
+    }
+
+.title{
+    text-align: center;
+    margin: 5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+}
+
+.main__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex-wrap: wrap;
+    width: 80%;
+   
+    margin: 0 auto;
+    gap: 1rem;
+}
+.main__contentParagrath, .main__contentParagrath img{
+    width: 15rem;
+    padding: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    h3{
+        font-size: 2rem;
+        font-family: 'Bebas Neue', sans-serif;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.main__experience p{
+    text-align: center;
+    margin: 6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.main__projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrousel_container{
+    width: 80%;
+    position: relative;
+}
+
+.mySlides{
+    display: none;
+}
+
+.mySlides img{
+    width: 100%;
+}
+
+.prev,
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.6 ease;
+    
+    user-select: none;
+    border:  none;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.elements{
+    text-align: center;
+}
+
+.quadrate{
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    margin: 0 2px;
+    background-color: #717171;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 2px;
+    &:hover{
+        background-color: #fff;
+    }
+}
+
+.active{
+    background-color: #fff;
+}
+
+.footer{
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+    img{
+        display: none;
+        width: 12rem;
+        margin-top: 3rem;
+    }
+    menu{
+        font-weight: bold;
+        text-align: end;
+        margin-right: 1rem;
+        margin-top: 3rem;
+        margin-left: 9rem;
+        a{
+            color: #fff;
+            font-size: 1.2rem;
+            &:hover{
+                color: $color-yellow;
+            }
+        }
+    }
+    button{
+        height: 4.25rem;
+        width: 20.875rem;
+        color: #000;
+        background-color: $color-yellow;
+        border: none;
+        border-radius: 30px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2.25rem;
+        margin-top: 5rem;
+        &:hover{
+            cursor: pointer;
+            transition: 0.6s;
+            background-color: black;
+            color: #fff;
+            border: #fff solid 2px;
+            }
+         }
+    p{
+        padding-left: 1rem;
+        padding-top: 2rem;
+    } 
+}
+
+.icons{
+    display: none;
+    i{
+        font-size: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.gallery{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    gap: 1rem;
+    margin-bottom: 15rem;
+}
+
+.image {
+    img{
+    max-width: 30rem;
+}
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    margin: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 20rem;
+
+    .container__elements{
+        cursor: pointer;
+        border: solid 1px rgba(62, 55, 55, 0.544);
+        border-radius: 10px;
+        text-align: center;
+        padding: 4rem;
+        img{
+            width: 3.5rem;
+            transition: 0.5s;
+            &:hover{ transform: scale(1.2)
+            }
+        }
+        p{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            &:hover{
+                color: $color-yellow;
+            }
+        }
+    }
+}
+
+.aboutus__main{
+    color: #fff;
+    background-color: #000;
+    background-image: url(/images/backgroundimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10rem;
+    h1{
+        @include font-for-titles()
+    }
+    p{
+        padding: 4rem;
+        line-height: 2rem;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+}
+
+.contact__main{
+    .contact__main-container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40rem;
+    }
+    .social-media{
+        text-align: end;
+        strong{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1.2rem;
+        }
+        i{
+            cursor: pointer;
+            font-size: 3rem;
+            padding: 0.8rem;
+            margin-right: 2rem;
+            transition: 0.5s;
+            &:hover{
+                color:$color-yellow;
+            }
+        }
+    }
+    .form{
+        margin-left: 2rem;
+        font-family: 'Josefin Sans', sans-serif;
+        line-height: 2rem;
+        input{
+            color: #fff;
+            border: none;
+            background-color: rgb(145, 145, 145);
+            width: 25rem;
+            height: 1.5rem;
+            padding: 1rem;
+        }
+        .input{
+            height: 8rem;
+            text-align: start;
+        }
+        button{
+            font-size: 2rem;
+            border: none;
+            background: none;
+            padding-top: 2rem;
+            cursor: pointer;
+            &:hover{
+                color: $color-yellow;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px)
+{
+
+.aboutus__main{
+    text-align: center;
+}
+
+.gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.main__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.main__contentParagrath,
+.main__contentParagrath img{
+    width: 20rem;
+    padding: auto;
+    text-align: center;
+}
+
+.open-menu,
+.close-menu {
+    display: block;
+    border: 0;
+    background: none;
+    font-size: 2rem;
+}
+.close-menu{
+    color: #ffff;
+}
+
+
+.nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    padding-right: 0.5rem;
+    padding-left: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 100%;
+    margin: 0;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6);
+    
+}
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+.nav__list{
+    flex-direction: column;
+    align-items: end;
+    li{
+        a{
+            color: #ffff;
+        }
+    }
+}
+
+.footer{
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    img{
+        display: block;
+    }
+    button{
+        display: none;
+    }
+    menu{
+        text-align: center;
+        margin: 0%;
+        a{
+            color: #ffff;
+            line-height: 4rem;
+            font-size: 1.5rem;
+        }
+    }
+    p{
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+}
+.icons{
+    display: block;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container__elements{
+        width: 16rem;
+    }
+}
+
+.contact__main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .social-media{
+        i{
+            margin-right: 0;
+        }
+    }
+}
+
+}
