@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 
@@ -29,7 +31,7 @@
 			<ul class="nav__list">
 				<li><a href="pages/aboutus.html">About us</a></li>
 				<li><a href="pages/services.html">Services</a></li>
-				<li><a href="pages/portfolio.html">Portfolio</a></li>
+				<li><a href="pages/portfolio.html">Gallery</a></li>
 				<li><a href="pages/contact.html">Contact</a></li>
 			</ul>
 		</nav>
@@ -38,22 +40,23 @@
 		<div class="main__containerTop">
 			<div class="background"></div>
 				<h1>Make your proyects <br>come true.</h1>
-				<a href="pages/contact.html"><button>Contact us</button></a>
+				<a href="pages/contact.html"><button data-aos="zoom-in" data-aos-duration="1000">Contact us</button></a>
 			</div>
 		</div>
-		<h2 class="title">Why us?</h2> 
+		<h2 class="title" data-aos="fade-right" data-aos-duration="1000">Why us?</h2> 
 		<div class="main__content">
-			<div class="main__contentParagrath">
+			<div class="main__contentParagrath" data-aos="fade-up" data-aos-duration="1000">
 				<img src="images/stock1.png" alt="photostock" class="photostock1"><br>
 				<h3>Top Quality Materials</h3>
 				<p>We take pride in exclusively using high-quality materials in every project we undertake. From the meticulous selection of wood to the choice of finishes and components, we ensure that every piece we create is durable, resilient, and aesthetically exceptional. This dedication to material excellence not only guarantees the longevity of our products but also reflects our dedication to customer satisfaction and trust. Each project stands as a tangible manifestation of our relentless pursuit of carpentry quality.</p>
 				</div>
-				<div class="main__contentParagrath">
+				<div class="main__contentParagrath" data-aos="fade-up" data-aos-duration="1000">
 				<img src="images/stock2.png" alt="photostock" 	class="photostock2">
 				<h3>Custom Design</h3>
 				<p>We specialize in crafting custom designs that resonate with individuality. Our approach revolves around collaborating closely with clients, ensuring their ideas take center stage in the creative process. We believe that every project is a unique canvas, and our adept craftsmen meticulously shape each detail to match the client's vision. Our commitment to tailoring our work to the client's desires not only results in exquisite pieces but also in a seamless partnership that transforms concepts into stunning, personalized realities.</p>
 				</div>
-				<div class="main__contentParagrath">
+				<div class="main__contentParagrath" data-aos="fade-up"
+				data-aos-duration="1000">
 				<img src="images/stock3.png" alt="photostock" class="photostock3">
 				<h3>We Are Manufacturers</h3>
 				<p>Each project we undertake is an opportunity to showcase our expertise in the art of woodworking. From custom designs to unique pieces, our craftsmanship intertwines with innovation, allowing us to turn concepts into tangible realities. As manufacturers, our passion resides in every detail we infuse into our products, elevating both function and aesthetics to new heights.</p>
@@ -61,8 +64,8 @@
 			</div>
 			
 	</main>
-	<div class="main__projects">
-		<h2 class="title">Projects</h2>
+	<div class="main__projects" >
+		<h2 class="title" data-aos="fade-right" data-aos-duration="1000">Projects</h2>
 		<div class="carrousel_container">
 			<div class="mySlides">
 				<img src="images/cabinet.jpg" alt="imagen-1">
@@ -86,8 +89,8 @@
 		</div>
 	</section>
 	<div class="main__experience">
-		<h2 class="title">20 Years of experience</h2>
-		<p>With two decades of experience, our journey through carpentry has been one of continuous growth and refinement. Our 20-year legacy serves as a testament to our enduring commitment to excellence and innovation in every project we undertake. Over the years, we've honed our skills, embraced evolving trends, and harnessed our expertise to deliver unparalleled craftsmanship. This wealth of experience empowers us to navigate complex challenges, anticipate client needs, and consistently create woodwork that stands as a fusion of timeless tradition and contemporary artistry.
+		<h2 class="title" data-aos="fade-right" data-aos-duration="1000">20 Years of experience</h2>
+		<p data-aos="fade-up" data-aos-duration="1000">With two decades of experience, our journey through carpentry has been one of continuous growth and refinement. Our 20-year legacy serves as a testament to our enduring commitment to excellence and innovation in every project we undertake. Over the years, we've honed our skills, embraced evolving trends, and harnessed our expertise to deliver unparalleled craftsmanship. This wealth of experience empowers us to navigate complex challenges, anticipate client needs, and consistently create woodwork that stands as a fusion of timeless tradition and contemporary artistry.
 		</p>
 		</div>
 		<div class="footer">
@@ -105,7 +108,7 @@
 			<a href="index.html">Home</a><br>
 			<a href="pages/aboutus.html">About Us</a><br>
 			<a href="pages/services.html">Services</a><br>
-			<a href="pages/portfolio.html">Portfolio</a><br>
+			<a href="pages/portfolio.html">Gallery</a><br>
 			<a href="pages/contact.html">Contact</a>
 			</menu>
 			<img src="images/logowhite.png" alt="logo">
@@ -115,5 +118,7 @@
 		</footer>
 
 	<script src="./scripts/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
 </body>
 </html>
